@@ -1,0 +1,194 @@
+/* --- CSS Reset (Optional but Recommended) --- */
+/* Consider adding a more robust reset or normalize.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Basic Body Styles --- */
+body {
+    font-family: sans-serif; /* Replace with desired font */
+    line-height: 1.6;
+    color: #333; /* Base text color */
+    background-color: #f4f4f4; /* Light background */
+}
+
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #4CAF50; /* Example green */
+    color: #fff;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+}
+
+#site-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    /* Add more styling */
+}
+
+.main-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline-block; /* Or use Flexbox/Grid */
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    /* Add hover/focus styles */
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    text-decoration: underline;
+}
+
+
+/* --- Main Content Sections --- */
+main section {
+    background-color: #fff; /* White background for content cards */
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 5px; /* Soften corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+main h2 {
+    color: #4CAF50; /* Match header color */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee; /* Subtle separator */
+    padding-bottom: 5px;
+}
+
+main h3 {
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 1em;
+}
+
+main ul, main ol {
+    margin-left: 20px; /* Indent lists */
+    margin-bottom: 1em;
+}
+
+main li {
+    margin-bottom: 0.5em;
+}
+
+/* --- Specific Section Styles (Placeholders) --- */
+.hero-section {
+    /* Specific styles for the intro section if needed */
+    background-color: #e8f5e9; /* Lighter green */
+    text-align: center;
+}
+
+#food-guide .food-category,
+#food-guide .meal-ideas {
+    margin-bottom: 20px;
+    /* Maybe add borders or slightly different backgrounds */
+}
+
+/* --- Tools Section (Example BMI Calc) --- */
+#tools form div {
+    margin-bottom: 10px;
+}
+
+#tools label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#tools input[type="number"] {
+    padding: 8px;
+    width: 100px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+#tools button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#tools button:hover {
+    background-color: #45a049;
+}
+
+#bmi-result {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 1.5em; /* Prevent layout jump */
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer .disclaimer {
+    font-style: italic;
+    margin-bottom: 10px;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+}
+
+footer .copyright {
+    margin-top: 10px;
+}
+
+/* --- Accessibility --- */
+a:focus, button:focus {
+    outline: 2px solid #0056b3; /* Example focus style */
+    outline-offset: 2px;
+}
+
+/* --- Responsiveness (Placeholders) --- */
+@media (max-width: 768px) {
+    /* Styles for tablets */
+    .main-nav li {
+        /* Maybe display block for vertical nav */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile phones */
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+    .container {
+        padding: 0 10px;
+    }
+    header, main section, footer {
+        padding: 15px;
+    }
+    /* Adjust layout further */
+}
